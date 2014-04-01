@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        
+        <link rel="dns-prefetch" href="//ajax.googleapis.com">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Resort - Tignes</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <link rel="shortcut icon" href="favicon.ico">
+        
+        <meta name="google-translate-customization" content="1a1d28b28ea4aff8-3b804a3574745b7b-g9dc950b4c976a8d2-21"></meta>
+        
+    </head>
+    <body>
+    
+        <div id="wrapper">
+        	<div class="content">
+            
+                <header class="site-header">
+                	<a href="index.html"><h1 class="inner-wrap no-select">Goggles Companion</a><span class="greyscale no-select" role="button"></span></h1>
+                </header>
+                
+                <div class="resort tignes container clearfix">
+					
+					<h1 class="inner-wrap">Tignes</h1>
+					<div class="piste-map tignes-map"></div>
+					
+					<div class="piste-list">
+						<h2 class="inner-wrap">Runs</h2>
+						<div class="rc">
+							<div class="run run-green trigger-overlay inner-wrap">
+								<div class="send-to-goggles"></div>
+							</div>
+							<p>Mont Blanc</p>
+							<span class="run-label">green</span>
+						</div>
+						
+						<div class="rc">
+							<div class="run run-blue trigger-overlay inner-wrap">
+								<div class="send-to-goggles"></div>
+							</div>
+							<p>Prariond</p>
+							<span class="run-label">blue</span>
+						</div>
+						
+						<div class="rc">
+							<div class="run run-red trigger-overlay inner-wrap">
+								<div class="send-to-goggles"></div>
+							</div>
+							<p>Aiglon</p>
+							<span class="run-label">red</span>
+						</div>
+						
+						<div class="rc">
+							<div class="run run-black trigger-overlay inner-wrap">
+								<div class="send-to-goggles"></div>
+							</div>
+							<p>Epaule du charvet</p>
+							<span class="run-label">black</span>
+						</div>
+					</div>
+					
+					<div class="weather">
+						<h2 class="inner-wrap">Weather</h2>
+						<div class="hldr" id="weather-tignes">
+                            <div class="title inner-wrap">
+                            </div>
+                            
+                            <div class="temp inner-wrap">
+							</div>
+                            
+                            <div class="winds inner-wrap">
+                            </div>
+						</div>
+					</div>
+                </div>
+            </div><!--/content-->
+        </div><!--/wrapper-->
+        
+        <div class="overlay">
+			<i class="fa fa-times fa-3x trigger-overlay" title="Cancel"></i>
+            <p class="sending">Sending piste route to goggles, please wait...</p>
+            <i class="fa fa-spinner fa-spin fa-3x loading"></i>
+        </div>
+		
+		<footer class="site-footer clearfix">
+            <div class="footer-left inner-wrap float-left">
+                <div class="text-adjust no-select">
+                    <ul class="resizer" aria-describedby="text-resize">
+                        <li class="small" title="Small">A</li>
+                        <li class="medium" title="Medium">A</li>
+                        <li class="large" title="Large">A</li>
+                    </ul>
+                    <span aria-label="text-resize">Text Size</span>
+                </div>
+                <p class="copyright">&copy; Goggles App.</p>
+            </div>
+            <div class="footer-right inner-wrap float-right">
+                <div id="google_translate_element" class="no-select"></div>
+            </div>
+        </footer>
+		
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC6n-3I8KfH6ReeERae16W5M8B1QtzjPGc&sensor=true&libraries=places"></script>
+		<script src="js/vendor/jqweather.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',gaTrack:true,gaId:'UA-39049747-1'},'google_translate_element');}</script>
+    </body>
+</html>
