@@ -6,7 +6,7 @@
         <link rel="dns-prefetch" href="//ajax.googleapis.com">
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Resort - Metabief</title>
+        <title>Goggles Companion</title>
         <meta name="viewport" content="width=device-width, minimum-scale=1.0">
         
         <link rel="stylesheet" href="css/main.css">
@@ -19,8 +19,8 @@
         <meta name="google-translate-customization" content="1a1d28b28ea4aff8-3b804a3574745b7b-g9dc950b4c976a8d2-21"></meta>
         
     </head>
+	<!--this code is awful, don't judge us-->
     <body>
-    
         <div id="wrapper">
         	<div class="content">
             
@@ -31,66 +31,32 @@
 					</h1>
                 </header>
                 
-                <div class="resort metabief container clearfix">
-					
-					<h1 class="inner-wrap">Metabief</h1>
-					<div class="piste-map metabief-map"></div>
-                    
-					<div class="piste-list">
-						<h2 class="inner-wrap">Runs</h2>
-						<div class="rc">
-							<div class="run run-green trigger-overlay inner-wrap">
-								<div class="send-to-goggles"></div>
-							</div>
-							<p>Familiale | (beginner)</p>
-							<span class="run-label">green</span>
-						</div>
+                <div class="statistics container">
+					<div class="times">
+						<h1 class="inner-wrap">Times</h1>
+						<div class="brdr"></div><!--urgh-->
 						
-						<div class="rc">
-							<div class="run run-blue trigger-overlay inner-wrap">
-								<div class="send-to-goggles"></div>
-							</div>
-							<p>Berche | (novice)</p>
-							<span class="run-label">blue</span>
-						</div>
+						<p class="prev inner-wrap">Previous: <span>22.34.01</span/></p>
+						<p class="inner-wrap">Best: <span>19.20.00</span/></p>
 						
-						<div class="rc">
-							<div class="run run-red trigger-overlay inner-wrap">
-								<div class="send-to-goggles"></div>
-							</div>
-							<p>Marmotte | (intermediate)</p>
-							<span class="run-label">red</span>
-						</div>
+						<div class="fb-share"><i class="fa fa-facebook-square fa-2x"></i><span>Share</span></div>
 						
-						<div class="rc">
-							<div class="run run-black trigger-overlay inner-wrap">
-								<div class="send-to-goggles"></div>
-							</div>
-							<p>Renversee | (expert)</p>
-							<span class="run-label">black</span>
-						</div>
 					</div>
 					
-					<div class="weather">
-						<h2 class="inner-wrap">Weather</h2>
-						<div class="hldr" id="weather-metabief">
-                            <div class="title inner-wrap">
-                            </div>
-                            <div class="temp inner-wrap">
-							</div>
-                            <div class="winds inner-wrap">
-                            </div>
-						</div>
+					<div class="speeds">
+						<h1 class="inner-wrap">Speeds</h1>
+						<div class="brdr"></div>
+						
+						<p class="prev inner-wrap">Previous: <span>20mph</span/></p>
+						<p class="inner-wrap">Best: <span>41mph</span/></p>
+						
+						<div class="fb-share"><i class="fa fa-facebook-square fa-2x"></i><span>Share</span></div>
+						
 					</div>
                 </div>
+                
             </div><!--/content-->
         </div><!--/wrapper-->
-        
-        <div class="overlay">
-			<i class="fa fa-times fa-3x trigger-overlay" title="Cancel"></i>
-            <p class="sending">Sending piste route to goggles, please wait...</p>
-            <i class="fa fa-spinner fa-spin fa-3x loading"></i>
-        </div>
 		
 		<footer class="site-footer clearfix">
             <div class="footer-left inner-wrap float-left">
@@ -111,10 +77,8 @@
 		
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC6n-3I8KfH6ReeERae16W5M8B1QtzjPGc&sensor=false"></script>
-		<script src="js/vendor/jqweather.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC6n-3I8KfH6ReeERae16W5M8B1QtzjPGc&sensor=true&libraries=places"></script>
         <script src="js/main.js"></script>
-        <script src="js/weather.js"></script>
         <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		<script>function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',gaTrack:true,gaId:'UA-39049747-1'},'google_translate_element');}</script>
     </body>

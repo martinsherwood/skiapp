@@ -1,7 +1,5 @@
 @import url("normalize.css");
-
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
-
 *,
 *:after,
 *:before {
@@ -77,10 +75,7 @@ body {
   line-height: 28px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   margin: 0 0 10px 0;
   color: #212121;
   font-weight: 300;
@@ -160,7 +155,6 @@ h2 {
 
 /* Main mobile first
 ---------------------------------- */
-
 .site-header {
   width: 100%;
   height: 50px;
@@ -169,7 +163,6 @@ h2 {
   background: #444444;
   border-bottom: 1px solid #fffffa;
 }
-
 .site-header > h1 {
   color: #fffffa;
   font-size: 24px !important;
@@ -178,69 +171,68 @@ h2 {
   padding-top: 5px;
   position: relative;
 }
-
 .site-header > h1 a {
   text-decoration: none;
 }
-
 .site-header > h1 a:visited {
   color: #fffffa;
 }
-
-.site-header > h1 span {
+.site-header > h1 span.bt-connected {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 50px;
+  background: url("../img/bluetooth-connected.png") no-repeat;
+  background-size: cover;
+  color: #444444;
+  border-radius: 2px;
+}
+.site-header > h1 span.greyscale {
   position: absolute;
   width: 30px;
   height: 30px;
   top: 10px;
   right: 14px;
+  background: -moz-linear-gradient(-45deg, #ff297e 5%, #e72727 27%, #ff9633 47%, #ff9633 49%, #020302 50%);
   background: -webkit-gradient(linear, left top, right bottom, color-stop(5%, #ff297e), color-stop(27%, #e72727), color-stop(47%, #ff9633), color-stop(49%, #ff9633), color-stop(50%, #020302));
   background: -webkit-linear-gradient(-45deg, #ff297e 5%, #e72727 27%, #ff9633 47%, #ff9633 49%, #020302 50%);
-  background: -webkit-linear-gradient(315deg, #ff297e 5%, #e72727 27%, #ff9633 47%, #ff9633 49%, #020302 50%);
+  background: -ms-linear-gradient(-45deg, #ff297e 5%, #e72727 27%, #ff9633 47%, #ff9633 49%, #020302 50%);
   background: linear-gradient(135deg, #ff297e 5%, #e72727 27%, #ff9633 47%, #ff9633 49%, #020302 50%);
   color: #444444;
-  border-radius: 10px;
+  border-radius: 2px;
   cursor: pointer;
 }
 
 .ski-locations {
   position: relative;
 }
-
 .ski-locations #locations-map {
   width: 100%;
-  height: 260px;
+  height: 280px;
   display: block;
   border-bottom: 1px solid #fffffa;
 }
-
 @media screen and (min-width: 48em) {
   .ski-locations #locations-map {
-    height: 440px;
+    height: 460px;
   }
 }
-
-.ski-locations .adp-warnbox,
-.ski-locations .adp-legal,
-.ski-locations .gmnoprint,
-.ski-locations .gm-style-cc {
+.ski-locations .adp-warnbox, .ski-locations .adp-legal, .ski-locations .gmnoprint, .ski-locations .gm-style-cc {
   display: none;
 }
-
 .ski-locations .locations-list {
   position: relative;
   display: block;
 }
-
 .ski-locations .locations-list ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 .ski-locations .locations-list ul a {
   text-decoration: none;
 }
-
 .ski-locations .locations-list ul li {
   width: 100%;
   height: 70px;
@@ -252,37 +244,33 @@ h2 {
   border-bottom: 1px solid #fffffa;
   cursor: pointer;
 }
-
 .ski-locations .locations-list ul li i {
   position: absolute;
   top: 20%;
   right: 14px;
 }
-
+.ski-locations .locations-list ul li.stats {
+  background: #53B82B;
+}
 .ski-locations .locations-list ul .gerardmer {
   background: #ff2a7e;
 }
-
 .ski-locations .locations-list ul .metabief {
   background: #e72929;
 }
-
 .ski-locations .locations-list ul .tignes {
   background: #ff9530;
 }
-
 .ski-locations .locations-list ul .chamrousse {
   background: #00adef;
 }
 
 /* ---------- */
-
 .resort {
   width: 100%;
   height: auto;
   position: relative;
 }
-
 .resort h1 {
   height: 80px;
   position: absolute;
@@ -295,7 +283,6 @@ h2 {
   line-height: 50px;
   letter-spacing: 1px;
 }
-
 .resort h2 {
   height: 40px;
   margin: 0;
@@ -304,53 +291,40 @@ h2 {
   color: #fffffa;
   letter-spacing: 1px;
 }
-
 .resort .piste-map {
   width: 100%;
   max-width: 100%;
   height: 200px;
 }
-
 @media screen and (min-width: 48em) {
   .resort .piste-map {
     height: 440px;
   }
 }
-
 .resort .gerardmer-map {
   background: url("../img/gerardmer.png") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
-
 .resort .metabief-map {
   background: url("../img/metabief.png") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
-
 .resort .tignes-map {
   background: url("../img/tignes.png") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
-
 .resort .chamrousse-map {
   background: url("../img/chamrousse.png") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
-
 .resort .piste-list {
   width: 100%;
   position: relative;
 }
-
 .resort .piste-list .rc {
   position: relative;
   display: block;
 }
-
 .resort .piste-list .rc .run-label {
   height: 20px;
   position: absolute;
@@ -360,7 +334,6 @@ h2 {
   color: #fffffa;
   display: none;
 }
-
 .resort .piste-list .run {
   position: relative;
   display: inline-block;
@@ -375,16 +348,15 @@ h2 {
   font-size: 20px;
   cursor: pointer;
 }
-
 .resort .piste-list p {
   position: absolute;
-  top: 33px;
+  top: 14px;
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   display: inline-block;
   margin: 0;
 }
-
 .resort .piste-list .send-to-goggles {
   position: absolute;
   top: 5px;
@@ -393,71 +365,55 @@ h2 {
   height: 50px;
   display: inline-block;
   background: url("../img/goggles-icon.png") no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
 }
-
 .resort .piste-list .run-green {
   background: #8ab71f;
 }
-
 .resort .piste-list .run-blue {
   background: #00adef;
 }
-
 .resort .piste-list .run-red {
   background: #c73838;
 }
-
 .resort .piste-list .run-black {
   background: #0a0a0a;
 }
-
 .resort .weather {
   width: 100%;
   position: relative;
 }
-
 .resort .weather .hldr {
   margin-bottom: 22px;
 }
-
-.resort .weather .title,
-.resort .weather .temp {
+.resort .weather .title, .resort .weather .temp {
   margin-top: 14px;
 }
-
 .resort .weather .title {
   margin-bottom: 30px;
 }
-
 .resort .weather .title a {
   text-decoration: none;
   color: #ff4245;
 }
-
 .resort .weather .title a:visited {
   color: #ff4245;
 }
-
 .resort .weather .temp {
   margin-bottom: 18px;
 }
-
 .resort .weather .temp span.first {
   font-size: 50px;
 }
-
 .resort .weather .temp span.second {
   font-size: 28px;
   vertical-align: top;
   margin-left: 16px;
 }
-
 .resort .weather .winds {
   font-size: 28px;
+  line-height: 36px;
 }
-
 .resort .weather .winds span {
   font-size: 26px;
   font-style: italic;
@@ -470,8 +426,56 @@ h2 {
   display: block !important;
 }
 
-/* send to goggles overlay */
+.statistics {
+  position: relative;
+}
+.statistics .brdr {
+  width: 96%;
+  margin: 0 auto 10px auto;
+  border-bottom: 1px solid #ccc;
+}
+.statistics .fb-share {
+  width: 140px;
+  height: 60px;
+  position: relative;
+  background: #49639e;
+  color: #fffffa;
+  padding: 14px;
+  border-radius: 2px;
+  margin-left: 14px;
+  margin-top: 40px;
+}
+.statistics .fb-share i {
+  vertical-align: middle;
+  position: absolute;
+  top: 16%;
+  left: 10px;
+}
+.statistics .fb-share span {
+  position: absolute;
+  right: 18px;
+  font-size: 26px;
+}
+.statistics .fb-share:hover {
+  opacity: .94;
+}
+.statistics .times p, .statistics .speeds p {
+  margin: 30px 0 30px 0;
+  font-size: 30px;
+}
+.statistics .times p span, .statistics .speeds p span {
+  font-size: 50px;
+  vertical-align: middle;
+}
+.statistics .times {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+.statistics .times .prev {
+  margin-bottom: 40px;
+}
 
+/* send to goggles overlay */
 .overlay {
   position: fixed;
   width: 100%;
@@ -483,12 +487,11 @@ h2 {
   opacity: 0;
   -webkit-transition: all .5s;
   -moz-transtion: all .5s;
+  -ms-transition: all .5s;
   transition: all .5s;
   -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .overlay i {
   position: absolute;
   top: 30px;
@@ -496,7 +499,6 @@ h2 {
   color: white;
   cursor: pointer;
 }
-
 .overlay .sending {
   width: 100%;
   position: absolute;
@@ -511,11 +513,11 @@ h2 {
   color: white;
   text-align: center;
 }
-
 .overlay .loading {
   position: absolute;
-  top: 48%;
-  right: 50%;
+  top: 62%;
+  left: 0;
+  right: 0;
   -webkit-transform: translateY(-48%);
   -ms-transform: translateY(-48%);
   transform: translateY(-48%);
@@ -527,14 +529,13 @@ h2 {
   z-index: 20;
   -webkit-transition: all .5s;
   -moz-transtion: all .5s;
+  -ms-transition: all .5s;
   transition: all .5s;
   -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 /* ---------- */
-
 .site-footer {
   width: 100%;
   height: 100px;
@@ -543,12 +544,9 @@ h2 {
   background: #444444;
   color: white;
 }
-
-.site-footer .footer-left,
-.site-footer .footer-right {
+.site-footer .footer-left, .site-footer .footer-right {
   margin-top: 10px;
 }
-
 .site-footer .footer-left > p {
   font-size: 15px !important;
   line-height: 18px !important;
@@ -559,40 +557,33 @@ h2 {
   display: block;
   position: relative;
 }
-
 .text-adjust span {
   display: block;
   font-size: 15px !important;
   line-height: 18px !important;
 }
-
 .text-adjust ul.resizer {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 .text-adjust ul.resizer li {
   display: inline;
   cursor: pointer;
   margin-right: 5px;
 }
-
 .text-adjust ul.resizer li:nth-of-type(1) {
   font-size: 16px !important;
 }
-
 .text-adjust ul.resizer li:nth-of-type(2) {
   font-size: 24px !important;
 }
-
 .text-adjust ul.resizer li:nth-of-type(3) {
   font-size: 32px !important;
 }
 
 /* Google translate style overides
 ---------------------------------- */
-
 #google_translate_element {
   color: #838383 !important;
   font-size: 14px !important;
@@ -633,14 +624,11 @@ h2 {
 
 /* Adjustments for larger displays
 ---------------------------------- */
-
 @media only screen and (max-width: 56.25em) {
   /*900px*/
 }
-
 /* Helper classes
 ---------------------------------- */
-
 .ir {
   background-color: transparent;
   border: 0;
